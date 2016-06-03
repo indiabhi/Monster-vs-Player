@@ -19,6 +19,11 @@ class Monster(object):
         for key, value in kwargs.items():
             setattr(self, key, value)
 
+    def __str__(self):
+        return '{} {} HP:{} XP:{}'.format(self.color,
+                                          self.__class__.__name__,
+                                          self.hit_points,
+                                          self.experience)
 
     def battlecry(self):
         return self.sound.upper()
