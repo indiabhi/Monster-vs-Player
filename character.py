@@ -1,4 +1,8 @@
-class Character(object):
+
+from combat import Combat
+
+
+class Character(Combat):
     experience = 8
     hit_points = 12
 
