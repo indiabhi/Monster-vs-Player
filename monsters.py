@@ -22,3 +22,24 @@ class Monster(object):
 
     def battlecry(self):
         return self.sound.upper()
+
+class Goblin(Monster):
+    max_hit_points = 5
+    max_experience = 3
+    sound = "squeak"
+
+
+class Troll(Monster):
+    min_hit_points = 2
+    max_hit_points = 8
+    min_experience = 4
+    max_experience = 12
+    sound = "growl"
+
+
+class Dragon(Monster):
+    min_hit_points = 2
+    max_hit_points = 18
+    min_experience = 4
+    max_experience = 22
+    sound = "raarrrr"
